@@ -1,0 +1,7 @@
+first element is always the greatest
+similar to a heap
+Priority queues are implemented as container adaptors, 
+which are classes that use an encapsulated object of a specific container class as its underlying container, (底层容器)
+providing a specific set of member functions to access its elements. 
+Elements are popped from the "back" of the specific container, which is known as the top of the priority queue.
+
