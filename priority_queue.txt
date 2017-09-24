@@ -1,7 +1,27 @@
-first element is always the greatest
-similar to a heap
-Priority queues are implemented as container adaptors, 
+First element is always the greatest.
+Similar to a heap.
+
+Priority queues are implemented as container adaptors, （容器适配器)
 which are classes that use an encapsulated object of a specific container class as its underlying container, (底层容器)
 providing a specific set of member functions to access its elements. 
+
 Elements are popped from the "back" of the specific container, which is known as the top of the priority queue.
+
+The underlying container may be any of the standard container class templates or some other specifically designed container class. The container shall be accessible through random access iterators （随机访问迭代器) 
+and support the following operations:
+
+empty()
+size()
+front()
+push_back()
+pop_back()
+
+
+The standard container classes vector and deque fulfill these requirements. By default, if no container class is specified for a particular priority_queue class instantiation, the standard container vector is used.
+注意： 默认底层储存方式是vector, accessible through random access iterators 但是PQ只能拿到第一个元素 不能遍历
+random access 是为了让底层容器始终保持堆（heap)结构（自动保持)
+container adaptor automatically calls make_heap, push_heap and pop_heap when needed.
+
+
+
 
