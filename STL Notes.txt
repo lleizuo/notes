@@ -8,6 +8,16 @@ STL现在是C++的一部分，因此不用安装额外的库文件。
 
 容器总结 ( credit to http://blog.csdn.net/conanswp/article/details/23297441 )
 
+vector             随机访问                     
+deque              随机访问                       
+list               双向
+set                双向                            
+multiset           双向                           
+map                双向
+multimap           双向                             
+stack              不支持                        
+queue              不支持
+priority_queue     不支持
 
 Sequence Container 序列容器 （1）----（4）
 (1) vector   
