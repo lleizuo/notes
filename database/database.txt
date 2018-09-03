@@ -1,0 +1,42 @@
+Chapter 1 Introduction
+
+Data
+	Some values referring to real world facts.
+	May be in various formats, e.g., text, image, audio file, video file, etc.
+
+Database
+	A large collection of inter-related data.
+
+Database management system (DBMS)
+	DBMS = database(s) + a set of programs that store and access the data.
+
+Applications (DBMS as agent)
+	Banking
+		Customers records 
+		Login Password
+		Transactions
+		Account balance
+	Airline
+		Airport information
+		Aircraft
+		Flight (date, time, origin, destination)
+		Customer record
+		Booking
+	Universities
+		Student records
+		Emails
+		News and announcements
+		University fee payment
+		Course registration
+		Borrowed books
+	Social network
+	Online Maps
+	Smart card systems
+	......
+
+File system vs DBMS
+	In the early days, application programs were built on top of file systems. (e.g., DOS, Windows file explorer)
+	6 drawbacks of storing DB in file systems
+		1.Difficulty in accessing data - May be inefficient to locate a piece of information.
+		2.Data redundancy and inconsistency - Data got updated in one place but forget to update the other one.
+		3.Data isolation - Because data are scattered in various files, and files may be in different formats, writing new programs to retrieve the appropriate data is difficult. 
