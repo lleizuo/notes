@@ -52,3 +52,25 @@ File system vs DBMS
 
 Big DBMS vendors: Oracle, IBM DB2, Microsoft, SAP Sybase etc.
 Open source DBMS: PostgreSQL, MySQL
+
+Handle all problems related to large DB management.
+Convenient and efficient environment.
+3 powerful concepts supported by a DBMS:
+	1.Data abstraction
+		1.Physical level
+			Describes HOW the data are actually stored.
+			Describes complex low-level data structures in detail.
+			E.g. Actual data compressed or not? With what data compression scheme?
+		2.Logical level -> Use it to model the information in the database.
+			Describes WHAT data are stored. 
+			Describes the relationship among data.
+			Physical data independence
+				Adding an index to speed up the access won't affect the data stored in the database.
+				Compressing the data in the physical level also won't affect application programs or user interfaces.
+		3.View level
+			Describes only part of the entire DB.
+			Different users should have different view to the database.
+			It simplify users' interaction with the database system.
+	2.Data modeling
+	3.Database languages
+
