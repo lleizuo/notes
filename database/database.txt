@@ -40,3 +40,15 @@ File system vs DBMS
 		1.Difficulty in accessing data - May be inefficient to locate a piece of information.
 		2.Data redundancy and inconsistency - Data got updated in one place but forget to update the other one.
 		3.Data isolation - Because data are scattered in various files, and files may be in different formats, writing new programs to retrieve the appropriate data is difficult. 
+		4.Atomicity problems - How can we ensure that a transfer of money is done completely? (What would happen if the system crashes right after money is deducted but not deposited?)
+		5.Concurrent access anomalies - Inconsistency can occur, e.g., two customers reading and updating a balance at the same time.
+			10:00 Roy opens the file.
+			10:15 Boss opens the same file.
+			11:00 Boss added one more customer “Ben” to the file and saved the file.
+			12:00 Roy saves the file and overwrite the file boss saved.
+			13:00 Boss open the file and found that “Ben” is not in the file.
+		6.Integrity problem - Programmers need to enforce consistency constraints by adding appropriate code in the various application programs, which is hard to manage.
+			A checker program has to be added before every withdraw and transfer transactions.
+
+Big DBMS vendors: Oracle, IBM DB2, Microsoft, SAP Sybase etc.
+Open source DBMS: PostgreSQL, MySQL
