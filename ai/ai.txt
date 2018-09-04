@@ -1,0 +1,26 @@
+Chapter 1 Search
+Abstraction
+	Search problems are models
+		Simplifications of the real world
+		Don't deal with the unnecessary complexities of the real world
+Types of Search
+	Uninformed search
+		No information about the problem other than its definition is given
+	Informed search
+		A heuristic is used that leads to better overall performance in getting to the goal state
+	Local Search
+		Evaluate and modify a current state to move closer to a goal state
+	Constraint Satisfaction Problems
+		For certain types of problems we can search for solution faster by understanding states better
+	Adversarial Search
+		Search in the presence of an adversary 对手
+Search Problem Definition
+	States:Details of what constitutes a state
+	Initial state: The state the agent starts in
+	Actions and transition model
+		Description of possible actions available
+		Description of what each action does
+	Goal test
+	Path cost: A function that assigns a zero or positive numeric cost to each path
+	A solution is a sequence of actions (a plan) which transforms the start state to a goal state.
+
