@@ -72,5 +72,6 @@ Convenient and efficient environment.
 			Different users should have different view to the database.
 			It simplify users' interaction with the database system.
 	2.Data modeling
+		Data modeling is used to describe data in a systematic way. 
 	3.Database languages
 

@@ -23,4 +23,14 @@ Search Problem Definition
 	Goal test
 	Path cost: A function that assigns a zero or positive numeric cost to each path
 	A solution is a sequence of actions (a plan) which transforms the start state to a goal state.
-
+State Space Graph vs Search Tree
+	State space graph
+		A mathematical representation of a search problem
+		Nodes are abstracted world configurations.
+		Arcs represent successors (action results)
+		The goal test is a set of goal nodes
+		Each state occur only once.
+	Search Tree
+		Root of the tree if the start state
+		Nodes represent the possible action sequences
+		States may occur more than once
