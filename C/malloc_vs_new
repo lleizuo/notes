@@ -17,4 +17,14 @@ int main()
    return 0; 
 } 
 
-2.
+2.operator vs function: new is an operator, while malloc() is a function.
+
+3.return type: new returns exact data type, while malloc() returns void *.
+
+4.Failure Condition: On failure, malloc() returns NULL where as new Throws.
+
+5.Memory: In case of new, memory is allocated from free store where as in malloc() memory allocation is done from heap.
+
+6.Overriding: We are allowed to override new operator where as we can not override the malloc() function legally.
+
+7.Size: Required size of memory is calculated by compiler for new, where as we have to manually calculate size for malloc().
