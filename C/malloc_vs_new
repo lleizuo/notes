@@ -1,0 +1,20 @@
+Differences between malloc and new:
+
+1. Calling Constructors: 
+new calls constructors, while malloc() does not. 
+In fact primitive data types (char, int, float.. etc) can also be initialized with new. 
+For example, below program prints 10.
+
+#include<iostream> 
+  
+using namespace std; 
+  
+int main() 
+{ 
+   int *n = new int(10); // initialization with new() 
+   cout << *n; 
+   getchar(); 
+   return 0; 
+} 
+
+2.
