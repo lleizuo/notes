@@ -1,0 +1,9 @@
+1. const char * -> string / string -> const char *
+
+A: A: The std::string class has a constructor that takes a char const*, so you simply create an instance to do your conversion.
+B: Instances of std::string have a c_str() member function that returns a char const* that you can use to convert back to char const*.
+
+auto my_cstr = "Hello";        // A
+std::string s(my_cstr);        // A
+// ... modify 's' ...
+auto back_to_cstr = s.c_str(); // B
